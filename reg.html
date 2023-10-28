@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="./img_submit.gif">
+    <style>
+        .div {
+            width: 1200px;
+            height: 750px;
+            background-color: palevioletred;
+            margin-left: 100px;
+            position: relative;
+            bottom: 5px;
+        }
+
+        #frm {
+            width: 550px;
+            height: 550px;
+            background-color: white;
+            padding: 50px;
+            position: relative;
+            top: 60px;
+            left: 250px;
+        }
+
+        #fname {
+            width: 200px;
+            height: 30px;
+        }
+
+        #bday {
+            width: 200px;
+            height: 30px;
+        }
+
+        #email {
+            width: 200px;
+            height: 30px;
+        }
+
+        #frm2 {
+            float: right;
+            position: relative;
+            bottom: 265px;
+            right: 80px;
+        }
+
+        #lname {
+            width: 200px;
+            height: 30px;
+        }
+
+        #tel {
+            width: 200px;
+            height: 30px;
+            position: relative;
+            top: 15px;
+        }
+
+        div div form select {
+            width: 470px;
+            height: 30px;
+        }
+
+        @media screen and (max-width:576px) {
+            body {
+                background-color: red;
+            }
+
+            .div {
+                width: 100%;
+                height: 750px;
+                margin-left: 0px;
+                position: relative;
+                bottom: 5px;
+            }
+
+            #frm {
+                left: 0%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div">
+        <div id="frm">
+            <h2>Registration Form</h2><br>
+            <form action="" method="post">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" placeholder="Ibraheem"><br><br>
+                <label for="birthday">Birthday:</label><br>
+                <input type="datetime-local" id="bday"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email"><br><br>
+                <label for="subj">Subject:</label><br>
+                <select id="select">
+                    <option value="Choose option">Choose option</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="ul/ux design">ul/ux design</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="Fullstack">Fullstack</option>
+                </select>
+                <input type="submit" id="submit" value="Submit"
+                    style="background-color: blue;color: white; float: left; position: relative;top: 80px; width: 140px; height: 30px;">
+            </form>
+            <div id="frm2">
+                <form action="" method="post">
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" placeholder="Baba-Alaya"><br><br>
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="male" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" value="Female">
+                    <label for="female">Female</label><br><br>
+                    <label for="tel">Phone Number:</label><br>
+                    <input type="tel" id="tel">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
